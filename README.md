@@ -20,7 +20,7 @@
 
 ## Descrição do Projeto
 
-Sistema de **monitoramento e triagem de riscos ambientais** em municípios brasileiros, desenvolvido para o consórcio de Defesa Civil e cooperativas agrícolas. O sistema integra dados de satélites (GOES-16, Sentinel/ESA) e fontes nacionais (IBGE, Defesa Civil, INMET) para:
+Sistema de **monitoramento e triagem de riscos ambientais** em municípios brasileiros:
 
 - Representar municípios e rotas como **grafo ponderado** (dicionário de listas de adjacência)
 - Organizar riscos em **Árvore Binária de Busca (BST)** por índice de risco
@@ -114,9 +114,6 @@ python tests/test_algorithms.py
 matplotlib>=3.7
 networkx>=3.1
 ```
-
-*(Sem bibliotecas externas para as estruturas de dados — BST e grafo são implementados do zero)*
-
 ---
 
 ## Conexão com ODS da ONU
