@@ -1,0 +1,43 @@
+{
+  "_metadata": {
+    "descricao": "Malha viária federal e estadual do RS usada na modelagem do grafo. 20 trechos rodoviários entre os 15 municípios do Cenário A.",
+    "fontes": [
+      "DNIT — Malha Rodoviária Federal: dnit.gov.br/mapas-multimodais/shapefiles",
+      "DAER-RS — Rodovias Estaduais do RS: daer.rs.gov.br",
+      "Google Maps Distance Matrix (validação dos tempos estimados)"
+    ],
+    "nota_metodologica": "Tempo de deslocamento (horas) estimado assumindo velocidade média de 70 km/h em rodovias federais e 60 km/h em estaduais, acrescido de 15% de margem para condições de emergência (bloqueios parciais, desvios, controle de tráfego).",
+    "campos": {
+      "id_origem": "Código IBGE do município de origem",
+      "id_destino": "Código IBGE do município de destino",
+      "nome_origem": "Nome do município de origem",
+      "nome_destino": "Nome do município de destino",
+      "rodovia": "Identificação da rodovia principal do trecho",
+      "distancia_km": "Distância rodoviária aproximada (km)",
+      "tempo_horas": "Tempo de deslocamento estimado (horas) — peso da aresta no grafo",
+      "bidirecional": "Grafo não dirigido: aresta vale nos dois sentidos"
+    }
+  },
+  "trechos": [
+    { "id_origem": 4314902, "id_destino": 4304606, "nome_origem": "Porto Alegre",    "nome_destino": "Canoas",          "rodovia": "BR-116 / Freeway",  "distancia_km": 18,  "tempo_horas": 0.5, "bidirecional": true },
+    { "id_origem": 4314902, "id_destino": 4309209, "nome_origem": "Porto Alegre",    "nome_destino": "Guaíba",          "rodovia": "BR-116 Sul",        "distancia_km": 22,  "tempo_horas": 0.8, "bidirecional": true },
+    { "id_origem": 4314902, "id_destino": 4306932, "nome_origem": "Porto Alegre",    "nome_destino": "Eldorado do Sul", "rodovia": "RS-040",            "distancia_km": 32,  "tempo_horas": 0.9, "bidirecional": true },
+    { "id_origem": 4314902, "id_destino": 4318705, "nome_origem": "Porto Alegre",    "nome_destino": "São Leopoldo",    "rodovia": "BR-116",            "distancia_km": 42,  "tempo_horas": 1.2, "bidirecional": true },
+    { "id_origem": 4314902, "id_destino": 4316808, "nome_origem": "Porto Alegre",    "nome_destino": "Santa Maria",     "rodovia": "BR-290",            "distancia_km": 290, "tempo_horas": 3.5, "bidirecional": true },
+    { "id_origem": 4314902, "id_destino": 4314407, "nome_origem": "Porto Alegre",    "nome_destino": "Pelotas",         "rodovia": "BR-116 Sul",        "distancia_km": 245, "tempo_horas": 3.0, "bidirecional": true },
+    { "id_origem": 4304606, "id_destino": 4318705, "nome_origem": "Canoas",          "nome_destino": "São Leopoldo",    "rodovia": "BR-116",            "distancia_km": 20,  "tempo_horas": 0.6, "bidirecional": true },
+    { "id_origem": 4304606, "id_destino": 4313409, "nome_origem": "Canoas",          "nome_destino": "Novo Hamburgo",   "rodovia": "BR-116",            "distancia_km": 35,  "tempo_horas": 1.0, "bidirecional": true },
+    { "id_origem": 4318705, "id_destino": 4313409, "nome_origem": "São Leopoldo",    "nome_destino": "Novo Hamburgo",   "rodovia": "BR-116",            "distancia_km": 15,  "tempo_horas": 0.5, "bidirecional": true },
+    { "id_origem": 4313409, "id_destino": 4305108, "nome_origem": "Novo Hamburgo",   "nome_destino": "Caxias do Sul",   "rodovia": "RS-122",            "distancia_km": 75,  "tempo_horas": 1.2, "bidirecional": true },
+    { "id_origem": 4313409, "id_destino": 4309100, "nome_origem": "Novo Hamburgo",   "nome_destino": "Gramado",         "rodovia": "RS-020",            "distancia_km": 75,  "tempo_horas": 1.5, "bidirecional": true },
+    { "id_origem": 4305108, "id_destino": 4309100, "nome_origem": "Caxias do Sul",   "nome_destino": "Gramado",         "rodovia": "RS-453",            "distancia_km": 42,  "tempo_horas": 0.8, "bidirecional": true },
+    { "id_origem": 4311403, "id_destino": 4314902, "nome_origem": "Lajeado",         "nome_destino": "Porto Alegre",    "rodovia": "BR-386",            "distancia_km": 120, "tempo_horas": 2.0, "bidirecional": true },
+    { "id_origem": 4311403, "id_destino": 4317103, "nome_origem": "Lajeado",         "nome_destino": "Santa Cruz do Sul","rodovia": "RS-130",           "distancia_km": 50,  "tempo_horas": 0.7, "bidirecional": true },
+    { "id_origem": 4311403, "id_destino": 4316808, "nome_origem": "Lajeado",         "nome_destino": "Santa Maria",     "rodovia": "BR-287",            "distancia_km": 148, "tempo_horas": 2.5, "bidirecional": true },
+    { "id_origem": 4314407, "id_destino": 4315602, "nome_origem": "Pelotas",         "nome_destino": "Rio Grande",      "rodovia": "BR-392",            "distancia_km": 58,  "tempo_horas": 1.5, "bidirecional": true },
+    { "id_origem": 4314407, "id_destino": 4300900, "nome_origem": "Pelotas",         "nome_destino": "Bagé",            "rodovia": "BR-293",            "distancia_km": 162, "tempo_horas": 2.5, "bidirecional": true },
+    { "id_origem": 4316808, "id_destino": 4300900, "nome_origem": "Santa Maria",     "nome_destino": "Bagé",            "rodovia": "BR-153 / BR-293",   "distancia_km": 240, "tempo_horas": 3.0, "bidirecional": true },
+    { "id_origem": 4316808, "id_destino": 4322400, "nome_origem": "Santa Maria",     "nome_destino": "Uruguaiana",      "rodovia": "BR-290",            "distancia_km": 340, "tempo_horas": 4.0, "bidirecional": true },
+    { "id_origem": 4300900,  "id_destino": 4322400, "nome_origem": "Bagé",           "nome_destino": "Uruguaiana",      "rodovia": "BR-472",            "distancia_km": 280, "tempo_horas": 3.5, "bidirecional": true }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "_metadata": {
+    "descricao": "Malha rodoviária federal e estadual da região MATOPIBA. 15 trechos entre os 12 municípios do Cenário B. Pesos = distância em km.",
+    "fontes": [
+      "DNIT — Malha Rodoviária Federal: dnit.gov.br/mapas-multimodais/shapefiles",
+      "DER-TO / DER-MA / DER-PI / DER-BA — Rodovias estaduais",
+      "Google Maps Distance Matrix (validação das distâncias)"
+    ],
+    "nota_metodologica": "Pesos das arestas em quilômetros (diferente do Cenário RS que usa horas). O Dijkstra minimiza distância total percorrida pelas equipes de atendimento à seca, priorizando municípios de maior risco acessíveis com menor deslocamento.",
+    "campos": {
+      "id_origem": "Código IBGE do município de origem",
+      "id_destino": "Código IBGE do município de destino",
+      "nome_origem": "Nome do município de origem",
+      "nome_destino": "Nome do município de destino",
+      "rodovia": "Identificação da rodovia principal",
+      "distancia_km": "Distância rodoviária (km) — peso da aresta no grafo",
+      "bidirecional": "Grafo não dirigido: aresta vale nos dois sentidos"
+    }
+  },
+  "trechos": [
+    { "id_origem": 1721000, "id_destino": 1717800, "nome_origem": "Palmas",                  "nome_destino": "Porto Nacional",          "rodovia": "TO-050",         "distancia_km": 60,  "bidirecional": true },
+    { "id_origem": 1721000, "id_destino": 1716109, "nome_origem": "Palmas",                  "nome_destino": "Colinas do Tocantins",    "rodovia": "BR-153",         "distancia_km": 220, "bidirecional": true },
+    { "id_origem": 1721000, "id_destino": 2105302, "nome_origem": "Palmas",                  "nome_destino": "Imperatriz",              "rodovia": "BR-010",         "distancia_km": 350, "bidirecional": true },
+    { "id_origem": 1721000, "id_destino": 2101400, "nome_origem": "Palmas",                  "nome_destino": "Balsas",                  "rodovia": "BR-230",         "distancia_km": 480, "bidirecional": true },
+    { "id_origem": 2101400, "id_destino": 2211209, "nome_origem": "Balsas",                  "nome_destino": "Uruçuí",                  "rodovia": "BR-135",         "distancia_km": 280, "bidirecional": true },
+    { "id_origem": 2101400, "id_destino": 2111532, "nome_origem": "Balsas",                  "nome_destino": "São Raimundo Mangabeira", "rodovia": "MA-006",         "distancia_km": 250, "bidirecional": true },
+    { "id_origem": 2211209, "id_destino": 2203909, "nome_origem": "Uruçuí",                  "nome_destino": "Floriano",                "rodovia": "BR-343",         "distancia_km": 200, "bidirecional": true },
+    { "id_origem": 2211209, "id_destino": 2201903, "nome_origem": "Uruçuí",                  "nome_destino": "Bom Jesus",               "rodovia": "BR-135",         "distancia_km": 170, "bidirecional": true },
+    { "id_origem": 2203909, "id_destino": 2204527, "nome_origem": "Floriano",                "nome_destino": "Formosa do Rio Preto",    "rodovia": "PI-140",         "distancia_km": 140, "bidirecional": true },
+    { "id_origem": 2201903, "id_destino": 2204527, "nome_origem": "Bom Jesus",               "nome_destino": "Formosa do Rio Preto",    "rodovia": "BR-135",         "distancia_km": 180, "bidirecional": true },
+    { "id_origem": 2903201, "id_destino": 2919553, "nome_origem": "Barreiras",               "nome_destino": "Luís Eduardo Magalhães",  "rodovia": "BR-020",         "distancia_km": 120, "bidirecional": true },
+    { "id_origem": 2903201, "id_destino": 2101400, "nome_origem": "Barreiras",               "nome_destino": "Balsas",                  "rodovia": "BR-135",         "distancia_km": 550, "bidirecional": true },
+    { "id_origem": 2919553, "id_destino": 2211209, "nome_origem": "Luís Eduardo Magalhães",  "nome_destino": "Uruçuí",                  "rodovia": "BR-135",         "distancia_km": 420, "bidirecional": true },
+    { "id_origem": 2105302, "id_destino": 2111532, "nome_origem": "Imperatriz",              "nome_destino": "São Raimundo Mangabeira", "rodovia": "BR-010 / MA-006","distancia_km": 320, "bidirecional": true },
+    { "id_origem": 1716109, "id_destino": 2101400, "nome_origem": "Colinas do Tocantins",    "nome_destino": "Balsas",                  "rodovia": "TO-164 / MA-006","distancia_km": 320, "bidirecional": true }
+  ]
+}

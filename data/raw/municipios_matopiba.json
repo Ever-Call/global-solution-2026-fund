@@ -1,0 +1,133 @@
+{
+  "_metadata": {
+    "descricao": "Municípios da região MATOPIBA com índice de risco de seca derivado de NDVI (MODIS) e anomalia de precipitação (INMET). Dados sintéticos calibrados com valores reais de 2023.",
+    "fontes": [
+      "NASA Earthdata — MODIS MOD13Q1 NDVI (resolução 250m, produto 16 dias): earthdata.nasa.gov",
+      "INMET — BDMEP Precipitação Histórica (normais climatológicas 1991–2020): bdmep.inmet.gov.br",
+      "IBGE — Censo 2022, populações estimadas: ibge.gov.br/geociencias",
+      "Defesa Civil Nacional — Relatório Seca MATOPIBA 2023"
+    ],
+    "formula_indice_risco": "indice_risco = 0.45 * fator_ndvi + 0.40 * fator_precipitacao + 0.15 * fator_pop_vulneravel",
+    "fator_ndvi": "1 - (ndvi_2023 / ndvi_media_historica). Quanto mais degradado o NDVI, maior o fator.",
+    "fator_precipitacao": "max(0, 1 - precipitacao_2023_mm / precipitacao_normal_mm). Déficit hídrico normalizado.",
+    "fator_pop_vulneravel": "Proporção da população rural sem acesso a saneamento básico (IBGE 2022).",
+    "campos": {
+      "id_ibge": "Código IBGE do município",
+      "nome": "Nome do município",
+      "estado": "UF",
+      "lat": "Latitude",
+      "lon": "Longitude",
+      "populacao_ibge_2022": "População Censo 2022",
+      "ndvi_2023": "NDVI médio anual 2023 (MODIS MOD13Q1, produto de 16 dias, média dos 23 composites)",
+      "ndvi_media_historica": "Média histórica NDVI 2010–2022 para o mesmo período",
+      "precipitacao_2023_mm": "Precipitação acumulada anual 2023 (mm) — estações INMET",
+      "precipitacao_normal_mm": "Normal climatológica 1991–2020 anual (mm) — INMET",
+      "deficit_hidrico_pct": "Déficit percentual: (normal - 2023) / normal * 100",
+      "pop_rural_sem_saneamento_pct": "% população rural sem esgotamento sanitário (IBGE 2022)",
+      "fator_ndvi": "Fator de degradação NDVI normalizado (0–1)",
+      "fator_precipitacao": "Fator de déficit hídrico normalizado (0–1)",
+      "fator_pop_vulneravel": "Fator de vulnerabilidade social (0–1)",
+      "indice_risco": "Índice de risco de seca composto (0–1) — usado no grafo e na BST",
+      "custo_atendimento_mil_reais": "Custo estimado de atendimento emergencial (R$ mil)",
+      "hub": "Se true, é o ponto de origem das equipes (hub logístico)"
+    }
+  },
+  "municipios": [
+    {
+      "id_ibge": 1721000, "nome": "Palmas",           "estado": "TO", "lat": -10.2491, "lon": -48.3243,
+      "populacao_ibge_2022": 313098,
+      "ndvi_2023": 0.52, "ndvi_media_historica": 0.61, "precipitacao_2023_mm": 1380, "precipitacao_normal_mm": 1760,
+      "deficit_hidrico_pct": 21.6, "pop_rural_sem_saneamento_pct": 0.28,
+      "fator_ndvi": 0.148, "fator_precipitacao": 0.216, "fator_pop_vulneravel": 0.28,
+      "indice_risco": 0.78, "custo_atendimento_mil_reais": 950.0, "hub": true
+    },
+    {
+      "id_ibge": 2101400, "nome": "Balsas",           "estado": "MA", "lat": -7.5328,  "lon": -46.0356,
+      "populacao_ibge_2022": 86614,
+      "ndvi_2023": 0.38, "ndvi_media_historica": 0.55, "precipitacao_2023_mm": 820,  "precipitacao_normal_mm": 1350,
+      "deficit_hidrico_pct": 39.3, "pop_rural_sem_saneamento_pct": 0.67,
+      "fator_ndvi": 0.309, "fator_precipitacao": 0.393, "fator_pop_vulneravel": 0.67,
+      "indice_risco": 0.88, "custo_atendimento_mil_reais": 280.0, "hub": false
+    },
+    {
+      "id_ibge": 2105302, "nome": "Imperatriz",       "estado": "MA", "lat": -5.5265,  "lon": -47.4916,
+      "populacao_ibge_2022": 262567,
+      "ndvi_2023": 0.45, "ndvi_media_historica": 0.58, "precipitacao_2023_mm": 1050, "precipitacao_normal_mm": 1480,
+      "deficit_hidrico_pct": 29.1, "pop_rural_sem_saneamento_pct": 0.41,
+      "fator_ndvi": 0.224, "fator_precipitacao": 0.291, "fator_pop_vulneravel": 0.41,
+      "indice_risco": 0.71, "custo_atendimento_mil_reais": 680.0, "hub": false
+    },
+    {
+      "id_ibge": 2903201, "nome": "Barreiras",        "estado": "BA", "lat": -12.1508, "lon": -44.9941,
+      "populacao_ibge_2022": 156975,
+      "ndvi_2023": 0.41, "ndvi_media_historica": 0.57, "precipitacao_2023_mm": 590,  "precipitacao_normal_mm": 890,
+      "deficit_hidrico_pct": 33.7, "pop_rural_sem_saneamento_pct": 0.55,
+      "fator_ndvi": 0.281, "fator_precipitacao": 0.337, "fator_pop_vulneravel": 0.55,
+      "indice_risco": 0.82, "custo_atendimento_mil_reais": 460.0, "hub": false
+    },
+    {
+      "id_ibge": 2919553, "nome": "Luís Eduardo Magalhães", "estado": "BA", "lat": -12.0965, "lon": -45.7894,
+      "populacao_ibge_2022": 93671,
+      "ndvi_2023": 0.43, "ndvi_media_historica": 0.56, "precipitacao_2023_mm": 650,  "precipitacao_normal_mm": 870,
+      "deficit_hidrico_pct": 25.3, "pop_rural_sem_saneamento_pct": 0.44,
+      "fator_ndvi": 0.232, "fator_precipitacao": 0.253, "fator_pop_vulneravel": 0.44,
+      "indice_risco": 0.79, "custo_atendimento_mil_reais": 380.0, "hub": false
+    },
+    {
+      "id_ibge": 1717800, "nome": "Porto Nacional",   "estado": "TO", "lat": -10.7058, "lon": -48.4169,
+      "populacao_ibge_2022": 54000,
+      "ndvi_2023": 0.50, "ndvi_media_historica": 0.60, "precipitacao_2023_mm": 1200, "precipitacao_normal_mm": 1620,
+      "deficit_hidrico_pct": 25.9, "pop_rural_sem_saneamento_pct": 0.35,
+      "fator_ndvi": 0.167, "fator_precipitacao": 0.259, "fator_pop_vulneravel": 0.35,
+      "indice_risco": 0.70, "custo_atendimento_mil_reais": 320.0, "hub": false
+    },
+    {
+      "id_ibge": 2211209, "nome": "Uruçuí",           "estado": "PI", "lat": -7.2336,  "lon": -44.5558,
+      "populacao_ibge_2022": 23000,
+      "ndvi_2023": 0.33, "ndvi_media_historica": 0.52, "precipitacao_2023_mm": 620,  "precipitacao_normal_mm": 1100,
+      "deficit_hidrico_pct": 43.6, "pop_rural_sem_saneamento_pct": 0.76,
+      "fator_ndvi": 0.365, "fator_precipitacao": 0.436, "fator_pop_vulneravel": 0.76,
+      "indice_risco": 0.91, "custo_atendimento_mil_reais": 210.0, "hub": false
+    },
+    {
+      "id_ibge": 2203909, "nome": "Floriano",         "estado": "PI", "lat": -6.7669,  "lon": -43.0222,
+      "populacao_ibge_2022": 59000,
+      "ndvi_2023": 0.36, "ndvi_media_historica": 0.53, "precipitacao_2023_mm": 700,  "precipitacao_normal_mm": 1150,
+      "deficit_hidrico_pct": 39.1, "pop_rural_sem_saneamento_pct": 0.61,
+      "fator_ndvi": 0.321, "fator_precipitacao": 0.391, "fator_pop_vulneravel": 0.61,
+      "indice_risco": 0.85, "custo_atendimento_mil_reais": 260.0, "hub": false
+    },
+    {
+      "id_ibge": 1716109, "nome": "Colinas do Tocantins", "estado": "TO", "lat": -8.0517, "lon": -48.4775,
+      "populacao_ibge_2022": 39000,
+      "ndvi_2023": 0.49, "ndvi_media_historica": 0.59, "precipitacao_2023_mm": 1100, "precipitacao_normal_mm": 1540,
+      "deficit_hidrico_pct": 28.6, "pop_rural_sem_saneamento_pct": 0.38,
+      "fator_ndvi": 0.169, "fator_precipitacao": 0.286, "fator_pop_vulneravel": 0.38,
+      "indice_risco": 0.76, "custo_atendimento_mil_reais": 190.0, "hub": false
+    },
+    {
+      "id_ibge": 2201903, "nome": "Bom Jesus",        "estado": "PI", "lat": -9.0739,  "lon": -44.3617,
+      "populacao_ibge_2022": 23000,
+      "ndvi_2023": 0.34, "ndvi_media_historica": 0.51, "precipitacao_2023_mm": 660,  "precipitacao_normal_mm": 1050,
+      "deficit_hidrico_pct": 37.1, "pop_rural_sem_saneamento_pct": 0.73,
+      "fator_ndvi": 0.333, "fator_precipitacao": 0.371, "fator_pop_vulneravel": 0.73,
+      "indice_risco": 0.89, "custo_atendimento_mil_reais": 175.0, "hub": false
+    },
+    {
+      "id_ibge": 2111532, "nome": "São Raimundo Mangabeira", "estado": "MA", "lat": -7.0183, "lon": -45.4836,
+      "populacao_ibge_2022": 20000,
+      "ndvi_2023": 0.37, "ndvi_media_historica": 0.54, "precipitacao_2023_mm": 780,  "precipitacao_normal_mm": 1200,
+      "deficit_hidrico_pct": 35.0, "pop_rural_sem_saneamento_pct": 0.70,
+      "fator_ndvi": 0.315, "fator_precipitacao": 0.350, "fator_pop_vulneravel": 0.70,
+      "indice_risco": 0.83, "custo_atendimento_mil_reais": 195.0, "hub": false
+    },
+    {
+      "id_ibge": 2204527, "nome": "Formosa do Rio Preto", "estado": "PI", "lat": -11.0486, "lon": -45.1958,
+      "populacao_ibge_2022": 12000,
+      "ndvi_2023": 0.40, "ndvi_media_historica": 0.55, "precipitacao_2023_mm": 620,  "precipitacao_normal_mm": 920,
+      "deficit_hidrico_pct": 32.6, "pop_rural_sem_saneamento_pct": 0.65,
+      "fator_ndvi": 0.273, "fator_precipitacao": 0.326, "fator_pop_vulneravel": 0.65,
+      "indice_risco": 0.80, "custo_atendimento_mil_reais": 165.0, "hub": false
+    }
+  ]
+}

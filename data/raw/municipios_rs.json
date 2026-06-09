@@ -1,0 +1,118 @@
+{
+  "_metadata": {
+    "descricao": "Municípios do Rio Grande do Sul afetados pelas enchentes de maio/2024. Dados sintéticos calibrados com valores reais.",
+    "fontes": [
+      "IBGE — Malha Municipal 2023 (códigos e populações): ibge.gov.br/geociencias",
+      "Defesa Civil RS — Relatório de Danos Enchentes 2024: defesacivil.rs.gov.br",
+      "ANA — Boletins Hidrologicos maio/2024: hidroweb.ana.gov.br"
+    ],
+    "campos": {
+      "id_ibge": "Código IBGE do município (7 dígitos)",
+      "nome": "Nome oficial",
+      "lat": "Latitude do centroide (grau decimal)",
+      "lon": "Longitude do centroide (grau decimal)",
+      "populacao_ibge_2022": "População — Censo 2022",
+      "pessoas_afetadas_2024": "Pessoas afetadas pelas enchentes (Defesa Civil RS, mai/2024)",
+      "domicilios_danificados_2024": "Domicílios danificados ou destruídos",
+      "nivel_pico_m": "Nível de pico do rio principal no município (metros)",
+      "cota_alerta_m": "Cota oficial de alerta de inundação (metros)",
+      "superacao_cota_m": "Quanto o pico superou a cota de alerta (metros)",
+      "custo_atendimento_mil_reais": "Custo estimado de envio de equipe de resposta (R$ mil) — Defesa Civil",
+      "indice_risco": "Índice de risco composto 0.0–1.0, derivado de: 40% impacto populacional + 35% superação de cota + 25% custo-benefício de atendimento",
+      "hub": "Se true, é o ponto de origem das equipes de resposta"
+    }
+  },
+  "municipios": [
+    {
+      "id_ibge": 4314902, "nome": "Porto Alegre",    "lat": -30.0346, "lon": -51.2177,
+      "populacao_ibge_2022": 1332570, "pessoas_afetadas_2024": 145000, "domicilios_danificados_2024": 51000,
+      "nivel_pico_m": 5.33, "cota_alerta_m": 3.15, "superacao_cota_m": 2.18,
+      "custo_atendimento_mil_reais": 1850.0, "indice_risco": 0.92, "hub": true
+    },
+    {
+      "id_ibge": 4304606, "nome": "Canoas",          "lat": -29.9154, "lon": -51.1836,
+      "populacao_ibge_2022": 345904, "pessoas_afetadas_2024": 120000, "domicilios_danificados_2024": 42000,
+      "nivel_pico_m": 4.98, "cota_alerta_m": 2.80, "superacao_cota_m": 2.18,
+      "custo_atendimento_mil_reais": 520.0, "indice_risco": 0.88, "hub": false
+    },
+    {
+      "id_ibge": 4311403, "nome": "Lajeado",         "lat": -29.4665, "lon": -51.9614,
+      "populacao_ibge_2022": 91435, "pessoas_afetadas_2024": 78000, "domicilios_danificados_2024": 24000,
+      "nivel_pico_m": 30.84, "cota_alerta_m": 20.00, "superacao_cota_m": 10.84,
+      "custo_atendimento_mil_reais": 280.0, "indice_risco": 0.95, "hub": false
+    },
+    {
+      "id_ibge": 4306932, "nome": "Eldorado do Sul", "lat": -30.0875, "lon": -51.5826,
+      "populacao_ibge_2022": 42617, "pessoas_afetadas_2024": 39000, "domicilios_danificados_2024": 12800,
+      "nivel_pico_m": 5.60, "cota_alerta_m": 2.50, "superacao_cota_m": 3.10,
+      "custo_atendimento_mil_reais": 180.0, "indice_risco": 0.97, "hub": false,
+      "observacao": "~90% do território inundado — caso mais grave do estado"
+    },
+    {
+      "id_ibge": 4309209, "nome": "Guaíba",          "lat": -30.1137, "lon": -51.3254,
+      "populacao_ibge_2022": 101574, "pessoas_afetadas_2024": 44000, "domicilios_danificados_2024": 13500,
+      "nivel_pico_m": 3.95, "cota_alerta_m": 2.90, "superacao_cota_m": 1.05,
+      "custo_atendimento_mil_reais": 220.0, "indice_risco": 0.90, "hub": false
+    },
+    {
+      "id_ibge": 4318705, "nome": "São Leopoldo",    "lat": -29.7596, "lon": -51.1471,
+      "populacao_ibge_2022": 237765, "pessoas_afetadas_2024": 72000, "domicilios_danificados_2024": 21000,
+      "nivel_pico_m": 5.12, "cota_alerta_m": 3.50, "superacao_cota_m": 1.62,
+      "custo_atendimento_mil_reais": 450.0, "indice_risco": 0.75, "hub": false
+    },
+    {
+      "id_ibge": 4313409, "nome": "Novo Hamburgo",   "lat": -29.6783, "lon": -51.1312,
+      "populacao_ibge_2022": 250728, "pessoas_afetadas_2024": 38000, "domicilios_danificados_2024": 9800,
+      "nivel_pico_m": 4.21, "cota_alerta_m": 3.20, "superacao_cota_m": 1.01,
+      "custo_atendimento_mil_reais": 480.0, "indice_risco": 0.68, "hub": false
+    },
+    {
+      "id_ibge": 4317103, "nome": "Santa Cruz do Sul","lat": -29.7180, "lon": -52.4259,
+      "populacao_ibge_2022": 131205, "pessoas_afetadas_2024": 22000, "domicilios_danificados_2024": 6200,
+      "nivel_pico_m": 4.80, "cota_alerta_m": 3.80, "superacao_cota_m": 1.00,
+      "custo_atendimento_mil_reais": 320.0, "indice_risco": 0.72, "hub": false
+    },
+    {
+      "id_ibge": 4314407, "nome": "Pelotas",         "lat": -31.7654, "lon": -52.3376,
+      "populacao_ibge_2022": 342053, "pessoas_afetadas_2024": 18000, "domicilios_danificados_2024": 4500,
+      "nivel_pico_m": 3.20, "cota_alerta_m": 2.70, "superacao_cota_m": 0.50,
+      "custo_atendimento_mil_reais": 650.0, "indice_risco": 0.61, "hub": false
+    },
+    {
+      "id_ibge": 4315602, "nome": "Rio Grande",      "lat": -32.0350, "lon": -52.0986,
+      "populacao_ibge_2022": 197500, "pessoas_afetadas_2024": 9000, "domicilios_danificados_2024": 2100,
+      "nivel_pico_m": 2.80, "cota_alerta_m": 2.50, "superacao_cota_m": 0.30,
+      "custo_atendimento_mil_reais": 580.0, "indice_risco": 0.55, "hub": false
+    },
+    {
+      "id_ibge": 4305108, "nome": "Caxias do Sul",   "lat": -29.1712, "lon": -51.1791,
+      "populacao_ibge_2022": 503276, "pessoas_afetadas_2024": 5500, "domicilios_danificados_2024": 1200,
+      "nivel_pico_m": 1.90, "cota_alerta_m": 2.00, "superacao_cota_m": 0.00,
+      "custo_atendimento_mil_reais": 780.0, "indice_risco": 0.48, "hub": false
+    },
+    {
+      "id_ibge": 4309100, "nome": "Gramado",         "lat": -29.3789, "lon": -50.8759,
+      "populacao_ibge_2022": 38000, "pessoas_afetadas_2024": 2800, "domicilios_danificados_2024": 650,
+      "nivel_pico_m": 1.40, "cota_alerta_m": 1.80, "superacao_cota_m": 0.00,
+      "custo_atendimento_mil_reais": 195.0, "indice_risco": 0.42, "hub": false
+    },
+    {
+      "id_ibge": 4316808, "nome": "Santa Maria",     "lat": -29.6842, "lon": -53.8069,
+      "populacao_ibge_2022": 285026, "pessoas_afetadas_2024": 14000, "domicilios_danificados_2024": 3800,
+      "nivel_pico_m": 3.10, "cota_alerta_m": 2.60, "superacao_cota_m": 0.50,
+      "custo_atendimento_mil_reais": 620.0, "indice_risco": 0.65, "hub": false
+    },
+    {
+      "id_ibge": 4300900, "nome": "Bagé",            "lat": -31.3286, "lon": -54.1069,
+      "populacao_ibge_2022": 118000, "pessoas_afetadas_2024": 6200, "domicilios_danificados_2024": 1500,
+      "nivel_pico_m": 2.20, "cota_alerta_m": 2.10, "superacao_cota_m": 0.10,
+      "custo_atendimento_mil_reais": 360.0, "indice_risco": 0.52, "hub": false
+    },
+    {
+      "id_ibge": 4322400, "nome": "Uruguaiana",      "lat": -29.7543, "lon": -57.0882,
+      "populacao_ibge_2022": 125435, "pessoas_afetadas_2024": 8500, "domicilios_danificados_2024": 2100,
+      "nivel_pico_m": 2.50, "cota_alerta_m": 2.20, "superacao_cota_m": 0.30,
+      "custo_atendimento_mil_reais": 410.0, "indice_risco": 0.58, "hub": false
+    }
+  ]
+}
