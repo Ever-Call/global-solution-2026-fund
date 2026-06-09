@@ -1,32 +1,29 @@
-# Global Solution 2026 — Monitoramento de Riscos Ambientais
+# 🌎 Global Solution 2026 — Sistema de Monitoramento de Riscos Ambientais
 
-**FIAP | 1º Semestre 2026 | Estruturas de Dados e Algoritmos — Dynamic Programming**
-
-# Link github: https://github.com/Ever-Call/global-solution-2026-fund
-
----
-
-## Identificação do Grupo
-
-| RA | Nome |
-|----|------|
-| 561969 | Eduardo Francisco Mauro Gonçalves |
-| 566232 | Matheus Henrique Ferreira Camargo da Silva |
-| 563971 | Ever Callisaya Amaru |
-| 564459 | João Pedro Vieira Góes |
-| 562008 | Mateus Nunes Araújo |
+**FIAP • 1º Semestre 2026
+Disciplina: Estruturas de Dados e Algoritmos (Dynamic Programming)**
 
 ---
 
 ## Descrição do Projeto
 
-Sistema de **monitoramento e triagem de riscos ambientais** em municípios brasileiros:
+Este projeto propõe uma solução computacional para monitoramento, análise e priorização de riscos ambientais em municípios brasileiros, utilizando estruturas de dados e algoritmos clássicos para apoiar a tomada de decisão em cenários de emergência climática.
 
-- Representar municípios e rotas como **grafo ponderado** (dicionário de listas de adjacência)
-- Organizar riscos em **Árvore Binária de Busca (BST)** por índice de risco
-- Encontrar rotas mínimas com **Algoritmo de Dijkstra** (Guloso)
-- Validar a solução ótima com **Força Bruta** (instâncias pequenas, N ≤ 12)
-- Comparar desempenho e medir o **gap de otimalidade** entre os dois algoritmos
+A aplicação integra:
+
+🌐 Grafos Ponderados para representar municípios e suas conexões;
+#
+🌳 Árvore Binária de Busca (BST) para organizar e consultar níveis de risco;
+#
+⚡ Algoritmo de Dijkstra (Guloso) para cálculo de rotas mínimas;
+#
+🔍 Força Bruta (Backtracking) para validação da solução ótima;
+#
+📊 Monitoramento de desempenho com análise de tempo, memória e operações;
+#
+📈 Visualizações gráficas para interpretação dos resultados.
+
+--- 
 
 ### Cenários implementados
 
@@ -124,5 +121,17 @@ networkx>=3.1
 | **ODS 9** — Infraestrutura | Otimização de rotas de atendimento com custo mínimo |
 | **ODS 11** — Cidades sustentáveis | Resposta rápida a enchentes urbanas (RS) |
 | **ODS 13** — Ação climática | Monitoramento contínuo de riscos ambientais via dados de satélite |
+
+---
+
+## 🧑‍💻 Integrantes do Grupo: 
+
+| Nome            | RM       |
+|-----------------|----------|
+| Eduardo Francisco Mauro Gonçalves | RM561969 |
+| Ever Callisaya Amaru | RM563971 |
+| João Pedro Vieira Góes | RM564459 |
+| Mateus Nunes Araujo | RM562008 |
+| Matheus Henrique Ferreira Camargo da Silva | RM566232 |
 
 ---
